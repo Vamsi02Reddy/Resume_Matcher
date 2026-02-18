@@ -91,7 +91,7 @@ const UploadResume = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:3000/analyze-skills",
+        "https://resume-matcher-3rqq.onrender.com/analyze-skills",
         formData,
       );
       const savedEntry = saveHistory(res.data, jobtitle);
