@@ -1,0 +1,54 @@
+/* Header */
+
+.custom-navbar {
+  background: linear-gradient(90deg, #4b6cb7, #182848);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.brand {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  color: #fff !important;
+}
+
+.nav-link-custom {
+  color: #f0f0f0 !important;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link-custom::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.nav-link-custom:hover::after {
+  width: 100%;
+}
+
+.nav-link-custom:hover {
+  color: #ffecb3 !important; 
+}
+
+.btn-custom {
+  background-color: #ffecb3;
+  color: #182848;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #ffd54f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
